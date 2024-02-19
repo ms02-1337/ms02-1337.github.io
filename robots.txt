@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: https://blog.ms02.es/sitemap.xml
+Sitemap: https://blog.ms02.es/https://blog.ms02.es/sitemap.xml
