@@ -1,25 +1,23 @@
 const swconf = {
   
-    cacheName: 'chirpy-1708384935',resources: [
-      '/https://blog.ms02.es/assets/css/jekyll-theme-chirpy.css',
-      '/https://blog.ms02.es/',
+    cacheName: 'chirpy-1719265140',resources: [
+      '/assets/css/jekyll-theme-chirpy.css',
+      '/',
       
-        '/https://blog.ms02.es/categories/',
+        '/categories/',
       
-        '/https://blog.ms02.es/about/',
+        '/about/',
       
 
       
       
-        '/https://blog.ms02.es/assets/js/dist/categories.min.js',
-        '/https://blog.ms02.es/assets/js/dist/commons.min.js',
-        '/https://blog.ms02.es/assets/js/dist/home.min.js',
-        '/https://blog.ms02.es/assets/js/dist/misc.min.js',
-        '/https://blog.ms02.es/assets/js/dist/page.min.js',
-        '/https://blog.ms02.es/assets/js/dist/post.min.js'
+        '/assets/js/dist/categories.min.js',
+        '/assets/js/dist/commons.min.js',
+        '/assets/js/dist/home.min.js',
+        '/assets/js/dist/misc.min.js',
+        '/assets/js/dist/page.min.js',
+        '/assets/js/dist/post.min.js'
     ],allowHosts: [
-      
-        'chirpy-img.netlify.app',
       
           'fonts.googleapis.com',
           'fonts.gstatic.com',

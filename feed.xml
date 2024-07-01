@@ -1,35 +1,75 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://blog.ms02.es/https://blog.ms02.es/</id>
+  <id>https://blog.ms02.es/</id>
   <title>Adrián Marcos</title>
-  <subtitle>Some personal stuff about computing, electronics and mechanics.</subtitle>
-  <updated>2024-02-20T00:22:13+01:00</updated>
+  <subtitle>Some personal stuff about computing, electronics, mechanics and personal projects.</subtitle>
+  <updated>2024-06-24T23:38:58+02:00</updated>
   <author>
     <name>Adrián Marcos</name>
-    <uri>https://blog.ms02.es/https://blog.ms02.es/</uri>
+    <uri>https://blog.ms02.es/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://blog.ms02.es/https://blog.ms02.es/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://blog.ms02.es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://blog.ms02.es/https://blog.ms02.es/"/>
+    href="https://blog.ms02.es/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
   <rights> © 2024 Adrián Marcos </rights>
-  <icon>https://blog.ms02.es/assets/img/favicons/favicon.ico</icon>
-  <logo>https://blog.ms02.es/assets/img/favicons/favicon-96x96.png</logo>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
-    <title>Customize the Favicon</title>
-    <link href="https://blog.ms02.es/https://blog.ms02.es/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-10T17:34:00+01:00</published>
+    <title>MBR challenge</title>
+    <link href="https://blog.ms02.es/posts/mbr-challenge/" rel="alternate" type="text/html" title="MBR challenge" />
+    <published>2024-06-23T08:10:00+02:00</published>
   
-    <updated>2019-08-10T17:34:00+01:00</updated>
+    <updated>2024-06-23T08:10:00+02:00</updated>
   
-    <id>https://blog.ms02.es/https://blog.ms02.es/posts/customize-the-favicon/</id>
-    <content src="https://blog.ms02.es/https://blog.ms02.es/posts/customize-the-favicon/" />
+    <id>https://blog.ms02.es/posts/mbr-challenge/</id>
+    <content src="https://blog.ms02.es/posts/mbr-challenge/" />
     <author>
-      <name>cotes</name>
+      <name>adrian</name>
+    </author>
+
+  
+    
+    <category term="Reversing" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      In this challenge, we are presented with a 512 KB file. Given that it’s a reverse engineering challenge, my initial step was to determine the file type.
+
+ms02@ms02:/home/ms02/Downloads$ file OS.bin
+OS.bin: DOS/MBR boot sector
+
+
+Upon inspecting the file, it was identified as an MBR (Master Boot Record) bootloader. To proceed, I decided to emulate the file using QEMU and verify if it could be exe...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Customize the Favicon</title>
+    <link href="https://blog.ms02.es/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
+    <published>2019-08-10T18:34:00+02:00</published>
+  
+    <updated>2024-06-23T02:59:45+02:00</updated>
+  
+    <id>https://blog.ms02.es/posts/customize-the-favicon/</id>
+    <content src="https://blog.ms02.es/posts/customize-the-favicon/" />
+    <author>
+      <name>adrian</name>
     </author>
 
   
@@ -61,15 +101,15 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
   
   <entry>
     <title>Getting Started</title>
-    <link href="https://blog.ms02.es/https://blog.ms02.es/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T13:55:00+01:00</published>
+    <link href="https://blog.ms02.es/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <published>2019-08-09T14:55:00+02:00</published>
   
-    <updated>2024-02-19T17:34:37+01:00</updated>
+    <updated>2024-06-23T02:59:45+02:00</updated>
   
-    <id>https://blog.ms02.es/https://blog.ms02.es/posts/getting-started/</id>
-    <content src="https://blog.ms02.es/https://blog.ms02.es/posts/getting-started/" />
+    <id>https://blog.ms02.es/posts/getting-started/</id>
+    <content src="https://blog.ms02.es/posts/getting-started/" />
     <author>
-      <name>cotes</name>
+      <name>adrian</name>
     </author>
 
   
@@ -109,15 +149,15 @@ There are two ways to create a new repository for this theme:
   
   <entry>
     <title>Writing a New Post</title>
-    <link href="https://blog.ms02.es/https://blog.ms02.es/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T07:10:00+01:00</published>
+    <link href="https://blog.ms02.es/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
+    <published>2019-08-08T08:10:00+02:00</published>
   
-    <updated>2019-08-08T07:10:00+01:00</updated>
+    <updated>2024-06-23T02:59:45+02:00</updated>
   
-    <id>https://blog.ms02.es/https://blog.ms02.es/posts/write-a-new-post/</id>
-    <content src="https://blog.ms02.es/https://blog.ms02.es/posts/write-a-new-post/" />
+    <id>https://blog.ms02.es/posts/write-a-new-post/</id>
+    <content src="https://blog.ms02.es/posts/write-a-new-post/" />
     <author>
-      <name>cotes</name>
+      <name>adrian</name>
     </author>
 
   
