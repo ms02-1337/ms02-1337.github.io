@@ -33,8 +33,8 @@
 <meta property="og:title" content="MBR challenge" />
 <meta name="author" content="Adrián Marcos" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="In this challenge, we are presented with a 512 KB file. Given that it’s a reverse engineering challenge, my initial step was to determine the file type." />
-<meta property="og:description" content="In this challenge, we are presented with a 512 KB file. Given that it’s a reverse engineering challenge, my initial step was to determine the file type." />
+<meta name="description" content="Some personal stuff about computing, electronics, mechanics and personal projects." />
+<meta property="og:description" content="Some personal stuff about computing, electronics, mechanics and personal projects." />
 <link rel="canonical" href="https://blog.ms02.es/posts/mbr-challenge/" />
 <meta property="og:url" content="https://blog.ms02.es/posts/mbr-challenge/" />
 <meta property="og:site_name" content="Adrián Marcos" />
@@ -45,7 +45,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@marcoscars02" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Adrián Marcos","url":"https://github.com/ms02-1337"},"dateModified":"2024-06-23T08:10:00+02:00","datePublished":"2024-06-23T08:10:00+02:00","description":"In this challenge, we are presented with a 512 KB file. Given that it’s a reverse engineering challenge, my initial step was to determine the file type.","headline":"MBR challenge","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.ms02.es/posts/mbr-challenge/"},"url":"https://blog.ms02.es/posts/mbr-challenge/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Adrián Marcos","url":"https://github.com/ms02-1337"},"dateModified":"2024-06-23T08:10:00+02:00","datePublished":"2024-06-23T08:10:00+02:00","description":"Some personal stuff about computing, electronics, mechanics and personal projects.","headline":"MBR challenge","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.ms02.es/posts/mbr-challenge/"},"url":"https://blog.ms02.es/posts/mbr-challenge/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2078,85 +2078,6 @@
     <!-- combine -->
     
   
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
 
   
 
@@ -2271,7 +2192,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1526 words"
+  title="1502 words"
 >
   <em>8 min</em> read</span>
 
@@ -2282,7 +2203,9 @@
   </header>
 
   <div class="content">
-    <p>In this challenge, we are presented with a 512 KB file. Given that it’s a reverse engineering challenge, my initial step was to determine the file type.</p>
+    <style>body {text-align: justify}</style>
+
+<p>In this challenge, we are presented with a 512 KB file. Given that it’s a reverse engineering challenge, my initial step was to determine the file type.</p>
 
 <div class="language-shell highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -2315,12 +2238,12 @@ OS.bin: DOS/MBR boot sector
 <p><a href="/assets/img/posts/mbr-challenge/correct_lenght.png" class="popup img-link  shimmer"><img src="/assets/img/posts/mbr-challenge/correct_lenght.png" alt="imagen.png" style="display:block; margin-left:auto; margin-right:auto" width="80%" loading="lazy"></a>
 <em>Correct length</em></p>
 
-<p>With this knowledge, I began analyzing the binary using IDA.</p>
+<p>With this knowledge, I began analyzing the binary using IDA. Check that the loading offset must be <code class="language-plaintext highlighter-rouge">0x7C00</code> as MBR starts on that address:</p>
 
-<p><a href="/assets/img/posts/mbr-challenge/load_binary.png" class="popup img-link  shimmer"><img src="/assets/img/posts/mbr-challenge/load_binary.png" alt="imagen.png" style="display:block; margin-left:auto; margin-right:auto" width="80%" loading="lazy"></a>
-<em>Loading binary</em></p>
+<p><a href="/assets/img/posts/mbr-challenge/binary_load.png" class="popup img-link  shimmer"><img src="/assets/img/posts/mbr-challenge/binary_load.png" alt="imagen.png" style="display:block; margin-left:auto; margin-right:auto" width="80%" loading="lazy"></a>
+<em>Loading binary with correct offset</em></p>
 
-<p>Initially, I disassembled the file as 32-bit code, but it didn’t look correct. There were sections of undissassembled data, so I switched to 16-bit mode, which disassembled perfectly after selecting “No” on the prompt.</p>
+<p>In order to remain compatible, all x86 BIOS architecture systems start with the microprocessor in an operating mode referred to as real mode. This mode works in 16-bit for compatibility, so let’s load it as 16-bit.</p>
 
 <p><a href="/assets/img/posts/mbr-challenge/bitmode.png" class="popup img-link  shimmer"><img src="/assets/img/posts/mbr-challenge/bitmode.png" alt="imagen.png" style="display:block; margin-left:auto; margin-right:auto" width="80%" loading="lazy"></a></p>
 
@@ -2344,11 +2267,6 @@ OS.bin: DOS/MBR boot sector
 
 <p><a href="/assets/img/posts/mbr-challenge/length_check.png" class="popup img-link  shimmer"><img src="/assets/img/posts/mbr-challenge/length_check.png" alt="imagen.png" style="display:block; margin-left:auto; margin-right:auto" width="80%" loading="lazy"></a>
 <em>Password length check</em></p>
-
-<p>Initially, attaching the debugger and running it didn’t stop at the breakpoint. I realized that the MBR is loaded by the BIOS at the physical address <code class="language-plaintext highlighter-rouge">0x7C00</code>. Reloading the binary at this address allowed the breakpoints to work.</p>
-
-<p><a href="/assets/img/posts/mbr-challenge/binary_load.png" class="popup img-link  shimmer"><img src="/assets/img/posts/mbr-challenge/binary_load.png" alt="imagen.png" style="display:block; margin-left:auto; margin-right:auto" width="80%" loading="lazy"></a>
-<em>Loading binary with correct offset</em></p>
 
 <p><a href="/assets/img/posts/mbr-challenge/breakpoint.png" class="popup img-link  shimmer"><img src="/assets/img/posts/mbr-challenge/breakpoint.png" alt="imagen.png" style="display:block; margin-left:auto; margin-right:auto" width="80%" loading="lazy"></a>
 <em>Stopped on breakpoint</em></p>
