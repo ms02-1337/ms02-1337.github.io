@@ -4,7 +4,7 @@
   <id>https://blog.ms02.es/</id>
   <title>Adrián Marcos</title>
   <subtitle>Some personal stuff about computing, electronics, mechanics and personal projects.</subtitle>
-  <updated>2024-11-14T17:29:58+01:00</updated>
+  <updated>2024-11-15T16:41:07+01:00</updated>
   <author>
     <name>Adrián Marcos</name>
     <uri>https://blog.ms02.es/</uri>
@@ -34,9 +34,15 @@
 
   
     
-    <category term="Mechanics" />
+    <category term="mechanics" />
     
     <category term="electronics" />
+    
+    <category term="motostudent" />
+    
+    <category term="electric vehicle" />
+    
+    <category term="engineering" />
     
   
 
@@ -48,8 +54,12 @@
 
 
 
-      Introduction
-Motostudent is an international competition where students must design, build, and test a prototype racing motorcycle. In this post, I will summarize over a year of work and walk you through the process of building an electric racing motorcycle from scratch. This project covers a wide range of technical and non-technical areas, which I will break down into key sections. The main se...
+      
+
+
+
+Introduction
+Motostudent is an international competition where students must design, build, and test a prototype racing motorcycle. In this post, I will summarize over a year of work and walk you through the process of building an electric racing motorcycle from scratch. This project covers a wide range of technical and non-technical areas, which I will break down into key sections. The mai...
     </summary>
   
 
