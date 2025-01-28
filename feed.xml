@@ -4,7 +4,7 @@
   <id>https://blog.ms02.es/</id>
   <title>Adrián Marcos</title>
   <subtitle>Some personal stuff about computing, electronics, mechanics and personal projects.</subtitle>
-  <updated>2025-01-28T17:22:11+01:00</updated>
+  <updated>2025-01-28T17:25:19+01:00</updated>
   <author>
     <name>Adrián Marcos</name>
     <uri>https://blog.ms02.es/</uri>
@@ -17,6 +17,48 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>MBR challenge</title>
+    <link href="https://blog.ms02.es/posts/mbr-challenge/" rel="alternate" type="text/html" title="MBR challenge" />
+    <published>2024-11-23T07:10:00+01:00</published>
+  
+    <updated>2024-11-08T21:59:10+01:00</updated>
+  
+    <id>https://blog.ms02.es/posts/mbr-challenge/</id>
+    <content src="https://blog.ms02.es/posts/mbr-challenge/" />
+    <author>
+      <name>adrian</name>
+    </author>
+
+  
+    
+    <category term="Reversing" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+In this challenge, we are presented with a 512 KB file. Given that it’s a reverse engineering challenge, my initial step was to determine the file type.
+
+ms02@ms02:/home/ms02/Downloads$ file OS.bin
+OS.bin: DOS/MBR boot sector
+
+
+Upon inspecting the file, it was identified as an MBR (Master Boot Record) bootloader. To proceed, I decided to emulate the file using QEMU and verify if it could be e...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -60,48 +102,6 @@
 
 Introduction
 Motostudent is an international competition where students must design, build, and test a prototype racing motorcycle. In this post, I will summarize over a year of work and walk you through the process of building an electric racing motorcycle from scratch. This project covers a wide range of technical and non-technical areas, which I will break down into key sections. The mai...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>MBR challenge</title>
-    <link href="https://blog.ms02.es/posts/mbr-challenge/" rel="alternate" type="text/html" title="MBR challenge" />
-    <published>2024-06-23T07:10:00+01:00</published>
-  
-    <updated>2024-11-08T21:59:10+01:00</updated>
-  
-    <id>https://blog.ms02.es/posts/mbr-challenge/</id>
-    <content src="https://blog.ms02.es/posts/mbr-challenge/" />
-    <author>
-      <name>adrian</name>
-    </author>
-
-  
-    
-    <category term="Reversing" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-In this challenge, we are presented with a 512 KB file. Given that it’s a reverse engineering challenge, my initial step was to determine the file type.
-
-ms02@ms02:/home/ms02/Downloads$ file OS.bin
-OS.bin: DOS/MBR boot sector
-
-
-Upon inspecting the file, it was identified as an MBR (Master Boot Record) bootloader. To proceed, I decided to emulate the file using QEMU and verify if it could be e...
     </summary>
   
 
