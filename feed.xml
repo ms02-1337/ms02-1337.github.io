@@ -4,7 +4,7 @@
   <id>https://blog.ms02.es/</id>
   <title>Adrián Marcos</title>
   <subtitle>Some personal stuff about computing, electronics, mechanics and personal projects.</subtitle>
-  <updated>2024-11-18T04:11:54+01:00</updated>
+  <updated>2025-01-28T17:22:11+01:00</updated>
   <author>
     <name>Adrián Marcos</name>
     <uri>https://blog.ms02.es/</uri>
@@ -12,8 +12,8 @@
   <link rel="self" type="application/atom+xml" href="https://blog.ms02.es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://blog.ms02.es/"/>
-  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2024 Adrián Marcos </rights>
+  <generator uri="https://jekyllrb.com/" version="4.4.0">Jekyll</generator>
+  <rights> © 2025 Adrián Marcos </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -22,7 +22,7 @@
   <entry>
     <title>Building an electric racing motorbike from scratch</title>
     <link href="https://blog.ms02.es/posts/building-an-electric-racing-motorbike-from-scratch/" rel="alternate" type="text/html" title="Building an electric racing motorbike from scratch" />
-    <published>2024-11-17T07:10:00+01:00</published>
+    <published>2024-06-23T07:10:00+01:00</published>
   
     <updated>2024-11-18T04:09:13+01:00</updated>
   
