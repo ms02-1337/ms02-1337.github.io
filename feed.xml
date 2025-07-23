@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://blog.ms02.es/</id>
+  <id>http://localhost:4000/</id>
   <title>Adrián Marcos</title>
   <subtitle>Some personal stuff about computing, electronics, mechanics and personal projects.</subtitle>
-  <updated>2025-02-05T10:12:01+01:00</updated>
+  <updated>2025-07-23T11:27:13+02:00</updated>
   <author>
     <name>Adrián Marcos</name>
-    <uri>https://blog.ms02.es/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://blog.ms02.es/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://blog.ms02.es/"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.0">Jekyll</generator>
   <rights> © 2025 Adrián Marcos </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>Building an electric racing motorbike from scratch</title>
-    <link href="https://blog.ms02.es/posts/building-an-electric-racing-motorbike-from-scratch/" rel="alternate" type="text/html" title="Building an electric racing motorbike from scratch" />
-    <published>2024-06-23T07:10:00+01:00</published>
+    <link href="http://localhost:4000/posts/building-an-electric-racing-motorbike-from-scratch/" rel="alternate" type="text/html" title="Building an electric racing motorbike from scratch" />
+    <published>2024-06-23T08:10:00+02:00</published>
   
-    <updated>2025-02-05T10:11:19+01:00</updated>
+    <updated>2025-02-05T11:11:19+02:00</updated>
   
-    <id>https://blog.ms02.es/posts/building-an-electric-racing-motorbike-from-scratch/</id>
-    <content src="https://blog.ms02.es/posts/building-an-electric-racing-motorbike-from-scratch/" />
+    <id>http://localhost:4000/posts/building-an-electric-racing-motorbike-from-scratch/</id>
+    <content src="http://localhost:4000/posts/building-an-electric-racing-motorbike-from-scratch/" />
     <author>
       <name>adrian</name>
     </author>
@@ -68,13 +68,13 @@ Motostudent is an international competition where students must design, build, a
   
   <entry>
     <title>MBR challenge</title>
-    <link href="https://blog.ms02.es/posts/mbr-challenge/" rel="alternate" type="text/html" title="MBR challenge" />
-    <published>2024-06-23T07:10:00+01:00</published>
+    <link href="http://localhost:4000/posts/mbr-challenge/" rel="alternate" type="text/html" title="MBR challenge" />
+    <published>2024-06-23T08:10:00+02:00</published>
   
-    <updated>2024-11-08T21:59:10+01:00</updated>
+    <updated>2024-11-08T22:59:10+02:00</updated>
   
-    <id>https://blog.ms02.es/posts/mbr-challenge/</id>
-    <content src="https://blog.ms02.es/posts/mbr-challenge/" />
+    <id>http://localhost:4000/posts/mbr-challenge/</id>
+    <content src="http://localhost:4000/posts/mbr-challenge/" />
     <author>
       <name>adrian</name>
     </author>
